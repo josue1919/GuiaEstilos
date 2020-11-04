@@ -1,0 +1,58 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/img/avatars/utm_.jpg);
+    /* align-items: center;
+     */
+}
+
+.wrapper{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.toast.login{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    margin-left: 40px;
+}
+.card{
+    width: 500px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    box-shadow: rgba(0,0,0,0.1)0 0 10px;
+    margin-top: 100px;
+    border-bottom: 4px solid #8bb240;
+}
+
+.card img{
+    width: 130px;
+    height: 130px;
+    margin-top: -70px;
+}
+
+.form-control.login{
+    width: 400px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button-login{
+    height: 150px;
+    width: 130px;
+}
+
+.izquierdajeje{
+    text-align: left !important;
+}
+
+.center{
+    text-align: center;
+}

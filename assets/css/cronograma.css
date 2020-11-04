@@ -1,0 +1,99 @@
+.titlegreen{
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+     background-color: #8bb240;
+      width: 100px; height: 20px;
+    border:0.5px solid #000;
+}
+
+.card{
+
+    width: 900px;
+    height: 800px;
+    box-shadow: rgba(0,0,0,0.1)0 0 10px;
+    
+    
+}
+
+.greentable{
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 2fr 3fr;
+    grid-template-rows: repeat(2,1fr);
+    height: 60px;
+   
+
+}
+
+.greentable span{
+    border:0.5px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#8bb240 ;
+    height: 20px;
+}
+
+.greentable div{
+    border:0.5px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.numeros{
+    margin-top:10px;
+    
+    display: grid;
+    /* grid-template-columns: 16fr repeat(15,1fr) 8fr; */
+    grid-template-columns: 1fr 8fr 1fr 1fr repeat(15,1fr) 8fr;
+
+}
+.numeros span{
+    display: flex;
+    justify-content: center;
+    border:0.5px solid #000;
+    background-color: #90CFEF;
+}
+.numeros p {
+    border:0.5px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.numeros div{
+    border:0.5px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+
+}
+
+
+.bluetable{
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 8fr 1fr 1fr repeat(15,1fr) 8fr;
+}
+
+.bluetable div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:0.5px solid #000;
+    background-color: #90CFEF;
+    height: 40px;
+}
+
+.bluetable span{
+    display: flex;
+    justify-content: center;
+    border:0.5px solid #000;
+    color:red;
+    height: 40px;
+}

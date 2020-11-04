@@ -1,0 +1,15 @@
+.profile-head {
+    transform: translateY(5rem)
+}
+
+.cover {
+    background-image: url(https://scontent.fcjs3-1.fna.fbcdn.net/v/t1.0-9/82119539_1133472593489993_1406155271755005952_n.jpg?_nc_cat=106&ccb=2&_nc_sid=e3f864&_nc_eui2=AeHTvdFgmtSebHTdDMUFfJ5RPOgo8kCSTb086CjyQJJNvZOhE8G0w0B4Hmj47ckf8L_ySBHm-dbFtnrjNbvrMTh_&_nc_ohc=r382xvkYsY0AX_O9iTu&_nc_ht=scontent.fcjs3-1.fna&oh=b5d87f5e8f4ad22df6bed62b0e994824&oe=5FC5AE7D);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.body-p {
+    background: #654ea3;
+    background: linear-gradient(to right, #e96443, #904e95);
+    min-height: 100vh
+}

@@ -1,0 +1,49 @@
+.contenedorcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.cardcrono{
+
+    width: 800px;
+    height: 600px;
+    box-shadow: rgba(0,0,0,0.1)0 0 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+
+.tablecrono{
+    width: 90%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 2fr 6fr 4fr 5fr 6fr 5fr;
+    grid-template-rows: 1fr;
+    border-radius: 10px;
+    
+
+}
+
+.tablecrono div{
+
+    border: 1px solid #c8c8c8;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.sectionbuton{
+
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+    padding-right: 40px;
+}
