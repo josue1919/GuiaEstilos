@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,74 +9,350 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
 
-    <!-- <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css"> -->
-    <link rel="stylesheet" href="/assets/fonts/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
-    <!-- <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
-
-    <!-- <link rel="stylesheet" href="../assets/fonts/fontawesome5-overrides.min.css"> -->
-    <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="../assets/css/Table-With-Search-1.css">
     <link rel="stylesheet" href="../assets/css/Table-With-Search.css">
 
-    <link rel="stylesheet" href="../assets/untitled.css">
-    <link rel="stylesheet" href="../assets/login.css">
+    <link rel="stylesheet" href="../assets/css/untitled.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/tables-tutorexperto.css">
+    <link rel="stylesheet" href="../assets/css/rangoslider-tutorexperto.css">
+
+
 
     <title>GUIA DE ESTILOS</title>
-</head> 
+</head>
+
 <body>
-    <header style="text-align: center;"><h1>GUIA DE ESTILOS </h1></header>
+    <header style="text-align: center;">
+        <h1>GUIA DE ESTILOS </h1>
+    </header>
 
-    <!-- Parte de los navs -->
     <div class="container">
-        <h2>Navbar</h2>
-        <nav class="navbar navbar-dark border-success d-md-flex align-items-start visible bounce animated sidebar sidebar-dark accordion bg-gradient-primary p-0" style="background-color: rgb(139,178,64);">
-            <div class="container-fluid d-flex flex-column p-0">
-                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#" style="background-color: rgb(139,178,64);">
-                    
-                    <img style="width: 73px; height: 70px;" src="/assets/img/avatars/LOGOUTM.png" alt="Hola">
-                    
-                    <div class="sidebar-brand-text mx-3"><span>MENÚ</span></div>
-                </a>
-                <hr class="sidebar-divider my-0">
-                <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="ProfesorExpertoActividades.html" style="background-color: rgb(139,178,64);"><i class="fas fa-tachometer-alt"></i><span>Gestionar Actividades</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="ProfesorExpertoPerfil.html" style="background-color: rgb(139,178,64);"><i class="fas fa-tachometer-alt"></i><span>Mi Perfil</span></a></li>
-                </ul>
-                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" data-aos="fade" id="sidebarToggle" type="button"></button></div>
-            </div>
-        </nav>
-        
+        <!-- nav -->
+        <div class="container-fluid">
+            <h2>Navbar</h2>
+            <nav class="navbar navbar-light navbar-expand bg-white mb-4 topbar static-top" data-toggle="tooltip"
+                data-bs-tooltip="">
+
+                <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3"
+                        id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+
+                    <ul class="nav navbar-nav flex-nowrap ml-auto">
+                        <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link"
+                                data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" role="menu"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto navbar-search w-100">
+                                    <div class="input-group"><input class="bg-light form-control border-0 small"
+                                            type="text" placeholder="Search for ...">
+                                        <div class="input-group-append"><button class="btn btn-primary py-0"
+                                                type="button"><i class="fas fa-search"></i></button></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link"
+                                    data-toggle="dropdown" aria-expanded="false" href="#"><span
+                                        class="badge badge-danger badge-counter">3+</span><i
+                                        class="fas fa-bell fa-fw"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
+                                    role="menu">
+                                    <h6 class="dropdown-header"
+                                        style="background-color: rgb(139,178,64);filter: blur(0px);">notificaciones
+                                    </h6>
+                                    <a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="mr-3">
+                                            <div class="bg-primary icon-circle"><i
+                                                    class="fas fa-file-alt text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">Octubre 23, 2020</span>
+                                            <p>¡Se ha actualizado la información!</p>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="mr-3">
+                                            <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div><span class="small text-gray-500">Octubre 27, 2020</span>
+                                            <p>Se ha agregado a un nuevo profesor experto.</p>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="mr-3">
+                                            <div class="bg-warning icon-circle"><i
+                                                    class="fas fa-exclamation-triangle text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">Noviembre 3, 2020</span>
+                                            <p>Alerta de seguridad: Es necesario verificar tu cuenta de correo
+                                                eléctronico.</p>
+                                        </div>
+                                    </a><a class="text-center dropdown-item small text-gray-500" href="#">Mostrar
+                                        todas las alertas</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link"
+                                    data-toggle="dropdown" aria-expanded="false" href="#"><i
+                                        class="fas fa-envelope fa-fw"></i><span
+                                        class="badge badge-danger badge-counter">7</span></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
+                                    role="menu">
+                                    <h1 class="dropdown-header" style="background-color: rgb(139,178,64);">
+                                        ¡Mensajes!</h1>
+                                    <a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle"
+                                                src="../assets/img/avatars/avatar4.jpeg">
+                                            <div class="bg-success status-indicator"></div>
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            <div class="text-truncate"><span>Envío de nuevas actividades a
+                                                    realizar</span></div>
+                                            <p class="small text-gray-500 mb-0">Carlos Canto - 58m</p>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle"
+                                                src="../assets/img/avatars/avatar2.jpeg">
+                                            <div class="status-indicator"></div>
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            <div class="text-truncate"><span>Reunión de tutores la siguiente
+                                                    semana.</span></div>
+                                            <p class="small text-gray-500 mb-0">Aureny Magaly - 1d</p>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle"
+                                                src="../assets/img/avatars/avatar3.jpeg">
+                                            <div class="bg-warning status-indicator"></div>
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            <div class="text-truncate"><span>Aviso de eventos internacionales la
+                                                    proxima semana.</span></div>
+                                            <p class="small text-gray-500 mb-0">Rodrigo Hu - 2d</p>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex align-items-center dropdown-item" href="#">
+                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle"
+                                                src="../assets/img/avatars/avatar5.jpeg">
+                                            <div class="bg-success status-indicator"></div>
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            <div class="text-truncate"><span>Se suspenden las actividades el día 23
+                                                    de.</span></div>
+                                            <p class="small text-gray-500 mb-0">Ing Pablo · 2 días</p>
+                                        </div>
+                                    </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All
+                                        Alerts</a>
+                                </div>
+                            </div>
+                            <div class="shadow dropdown-list dropdown-menu dropdown-menu-right"
+                                aria-labelledby="alertsDropdown"></div>
+                        </li>
+                        <div class="d-none d-sm-block topbar-divider"></div>
+                        <li class="nav-item dropdown no-arrow" role="presentation">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link"
+                                    data-toggle="dropdown" aria-expanded="false" href="#"><span
+                                        class="d-none d-lg-inline mr-2 text-gray-600 small">Rodrigo
+                                        Hu</span><img class="border rounded-circle img-profile"
+                                        src="../assets/img/dogs/image2.jpeg"></a>
+                                <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu">
+                                    <a class="dropdown-item" role="presentation" href="ProfesorExpertoPerfil.html"><i
+                                            class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Perfil</a><a
+                                        class="dropdown-item" role="presentation"
+                                        href="ProfesorExpertoActividades.html"><i
+                                            class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Gestionar</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation"
+                                        href="index.html">
+                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Cerrar
+                                        Sesión</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+        <!-- fin nav -->
+        <!-- Parte de los sidebar -->
+        <div class="container-fluid">
+            <h2>Sidebar</h2>
+            <nav class="navbar navbar-dark border-success d-md-flex align-items-start visible bounce animated sidebar sidebar-dark accordion bg-gradient-primary p-0"
+                style="background-color: rgb(139,178,64);">
+                <div class="container-fluid d-flex flex-column p-0">
+
+                    <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"
+                        style="background-color: rgb(139,178,64);">
+
+                        <img style="width: 73px; height: 70px;"
+                            src="http://tsuregistro.utmetropolitana.edu.mx/assets/LogoUTMBlanco.png" alt="Hola">
+
+                        <div class="sidebar-brand-text mx-3"><span></span></div>
+
+                    </a>
+                    <hr class="sidebar-divider my-0">
+                    <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#"
+                                style="background-color: rgb(139,178,64);"><i
+                                    class="fas fa-tachometer-alt"></i><span>Opción 1</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#"
+                                style="background-color: rgb(139,178,64);"><i class="fas fa-user"></i><span>Opción
+                                    2</span></a></li>
+                    </ul>
+                    <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0"
+                            data-aos="fade" id="sidebarToggle" type="button"></button></div>
+                </div>
+            </nav>
+
+        </div>
+
+        <!-- Fin parte de los navs -->
     </div>
 
 
-    
-    
-    
-    <!-- Parte de los botones -->
-    <h1 style="text-align: center; color: #222222; font-weight: bold;">BOTONES</h1>
+    <div class="container-fluid">
 
-    <!-- Boton -->
-    <div class="col-md-12 form-group">
-        <a class="btn btn-success btn-icon-split" role="button"><span
-                class="text-white-50 icon"
-                style="background-color: rgb(139,178,64);"><i
-                    class="fas fa-check"></i></span><span
-                class="text-white text"
-                style="background-color: rgb(139,178,64);">Registrar
-                Maestro</span></a>
+        <!-- Parte de los botones -->
+        <h1 style="text-align: center; color: #222222; font-weight: bold;">BOTONES</h1>
 
-                <a class="btn btn-success btn-icon-split disabled"
-            role="button"><span class="text-white-50 icon"
-                style="background-color: #E74A3B;"><i
-                    class="fas fa-close"></i></span><span
-                class="text-white text"
-                style="background-color: #E74A3B;">Eliminar Maestro</span></a>
+
+
+
+        <!-- Boton -->
+
+        <div class="row">
+            <!-- Botones habilitados -->
+            <h3 class="color22">Habilitados</h3>
+                <div class="col-md-12 form-group">
+                    <a class="btn btn-success btn-icon-split" role="button"><span class="text-white-50 icon"
+                            style="background-color: rgb(139,178,64);"><i class="fas fa-check"></i></span><span
+                            class="text-white text" style="background-color: rgb(139,178,64);">Registrar
+                            Maestro</span></a>
+
+                    <a class="btn btn-success btn-icon-split" role="button"><span class="text-white-50 icon"><i
+                                class="fas fa-check"></i></span><span class="text-white text">Registrar
+                            Maestro</span></a>
+
+                    <a class="btn btn-secondary btn-icon-split" role="button"><span class="text-white-50 icon"><i
+                                class="fas fa-check"></i></span><span class="text-white text">Registrar
+                            Maestro</span></a>
+                    <a class="btn btn-info btn-icon-split" role="button"><span class="text-white-50 icon"><i
+                                class="fas fa-check"></i></span><span class="text-white text">Registrar
+                            Maestro</span></a>
+
+                    <a class="btn btn-warning btn-icon-split" role="button"><span class="text-white-50 icon"><i
+                                class="fas fa-check"></i></span><span class="text-white text">Registrar
+                            Maestro</span></a>
+
+                    <a class="btn btn-danger btn-icon-split" role="button"><span class="text-white-50 icon"><i
+                                class="fas fa-check"></i></span><span class="text-white text">Registrar
+                            Maestro</span></a>
+                </div>
+
+                <!-- Deshabilitados -->
+                <h3 class="color22">Deshabilitados</h3>
+                <div class="col-md-12 form-group">
+                    <a class="btn btn-danger btn-icon-split disabled" role="button"><span
+                            class="text-white-50 icon"><i class="fas fa-trash"></i></span><span
+                            class="text-white text">Eliminar Maestro</span></a>
+
+                    <a class="btn btn-success btn-icon-split disabled" role="button"><span
+                            class="text-white-50 icon"><i class="fas fa-trash"></i></span><span
+                            class="text-white text">Eliminar Maestro</span></a>
+
+                    <a class="btn btn-secondary btn-icon-split disabled" role="button"><span
+                            class="text-white-50 icon"><i class="fas fa-trash"></i></span><span
+                            class="text-white text">Eliminar Maestro</span></a>
+
+                    <a class="btn btn-info btn-icon-split disabled" role="button"><span
+                            class="text-white-50 icon"><i class="fas fa-trash"></i></span><span
+                            class="text-white text">Eliminar Maestro</span></a>
+
+                    <a class="btn btn-warning btn-icon-split disabled" role="button"><span
+                            class="text-white-50 icon"><i class="fas fa-trash"></i></span><span
+                            class="text-white text">Eliminar Maestro</span></a>
+
+                    <a class="btn btn-primary btn-icon-split disabled" role="button"><span
+                            class="text-white-50 icon"><i class="fas fa-trash"></i></span><span
+                            class="text-white text">Eliminar Maestro</span></a>
+                </div>
+
+                <h3 class="color22 center-t">Dropdown Habilitado</h3><br>
+                
+                <div class="col-md-4">
+                    <div class="col-md-2 form-group">
+                        <label for="first_name"><strong>Tipo de usuario:</strong></label>
+                        <div class="dropdown">
+                            <button style="background-color: #8BB240; border-color: #8BB240;"
+                                class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                S E L E C C I O N A R
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">PROFESOR EXPERTO</a>
+                                <a class="dropdown-item" href="#">TUTORES</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="col-md-2 form-group">
+                        <label for="first_name"><strong>Tipo de usuario:</strong></label>
+                        <div class="dropdown">
+                            <button style="background-color: #8BB240; border-color: #8BB240;"
+                                class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                S E L E C C I O N A R
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">PROFESOR EXPERTO</a>
+                                <a class="dropdown-item" href="#">TUTORES</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="color22 center-t">Dropdown Deshabilitado</h3>
+                <div class="col-md-12">
+                    <div class="col-md-6 form-group">
+                        <label for="first_name"><strong>Tipo de usuario:</strong></label>
+                        <div class="dropdown">
+                            <button style="background-color: #8BB240; border-color: #8BB240;"
+                                class="btn btn-success dropdown-toggle disabled" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                S E L E C C I O N A R
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">PROFESOR EXPERTO</a>
+                                <a class="dropdown-item" href="#">TUTORES</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- Fin parte botones -->
     </div>
+    
 
-    <!-- Fin parte botones -->
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="../assets/js/Table-With-Search.js"></script>
+    <script src="../assets/js/theme.js"></script>
 </body>
+
 </html>
